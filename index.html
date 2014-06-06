@@ -14,36 +14,36 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="quform/css/form.css">
+        <link rel="stylesheet" href="css/form.css">
         
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
         <!--Google Fonts-->
-        <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Great+Vibes|Petit+Formal+Script|Arvo|Satisfy' rel='stylesheet' type='text/css'>
     </head>
     <body>
+        <div id="loadingScreen" style="position:fixed;top:0;left:0;width:100%;height:100%;z-index:2000;background:white"></div>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
         <!-- Add your site or application content here -->
         <header>
-                <!--<a id="logo" href="/index.html">CV</a>
-                <a id="wedding" href="#">The Big Day</a>
-                <a id="story" href="#">Our Story</a>
-                <a id="rsvp" href="#">Join Us!</a>-->
         </header>
         <div class="intro">
-        <h1>342</h1>
-        <h2>DAYS</h2>
-        <h3>until we</h3>
-        <h3 id="married-action">take the plunge</h3>
-        <!--<h2 id="married-action">tie the knot</h2>
-        <h2 id="married-action">jump the broom</h2>
-        <h2 id="married-action">say "I do"</h2>-->
+            <div class="days-until">
+                <h1 id="countdown"></h1>
+                <h2>DAYS</h2>
+                <h3 class="until-we">until we</h3>
+                <!--<h3 id="married-action">take the plunge</h3>-->
+            </div>
         </div>
 
     <div class="wedding">
+
+        <div class="plunge">
+            <h1 class="plunge-text">Take the Plunge</h1>
+        </div>
         <div class="when">
             <h1 class="heading"><span class="highlight">Mark your calendar<span class="highlight"></h1>
                 <div class="when-details">
@@ -65,7 +65,7 @@
                 </div>
 
                     <p class="map">
-                        <a href="https://www.google.com/maps/preview" target="_blank"><img src="map-small.png"></a>
+                        <a href="https://www.google.com/maps/place/JW+Marriott+Cancun+Resort+and+Spa/@21.0888372,-86.7705311,17z/data=!4m2!3m1!1s0x8f4c2847ebdca3db:0xdf62995cc94cc628" target="_blank"><img src="cancun-map.png"></a>
                     </p>
         </div>
 
@@ -153,12 +153,7 @@
                 </form>
             </div>
 
-        <footer>
-
-
-        </footer>
-
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
@@ -166,13 +161,19 @@
         <!-- jQuery -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 
-        <!-- Foundation JS -->
-        <script src="/js/foundation.min.js"></script>
-        <script>
-            $(document).foundation();
-        </script>
+        <!-- Countdown.js -->
+        <!--<script src="../js/countdown.js"></script>  
 
-        <script src="../js/script.js"></script>
+        <script>  
+            var clock = document.getElementById("countdown"), 
+            targetDate = new Date(2015, 05, 23); // May 23, 2015 
+            clock.innerHTML = countdown(targetDate).toString(); 
+
+              setInterval(function(){  
+                clock.innerHTML = countdown(targetDate).toString();  
+              }, 1000);    
+        </script>--> 
+
         <!-- Slides.js -->
         <!-- TODO link to the slides.min.js file -->
         <!--<script src="js/jquery.slides.min.js"></script>-->

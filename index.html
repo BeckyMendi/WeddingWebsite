@@ -3,6 +3,8 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    
+    <title>Christina & Victor's Wedding</title>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,155 +12,163 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Palce favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="quform/css/form.css">
+
+        <!--Codrops CSS-->
+        <!--<link rel="stylesheet" href="css/component.css">
+        <link rel="stylesheet" href="css/demo.css">
+        <link rel="stylesheet" href="css/normalize-2.css">-->
         
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
+        <!--Codrops JS-->
+        <!--<script src="js/modernizr.custom.js"></script>
+        <script src="js/svgcheckbox.js"></script>-->
+
+
         <!--Google Fonts-->
-        <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Oswald|Satisfy|Lato|Petit+Formal+Script' rel='stylesheet' type='text/css'>
+
     </head>
     <body>
+        <div id="loadingScreen" style="position:fixed;top:0;left:0;width:100%;height:100%;z-index:2000;background:white"></div>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- Add your site or application content here -->
-        <header>
-                <!--<a id="logo" href="/index.html">CV</a>
-                <a id="wedding" href="#">The Big Day</a>
-                <a id="story" href="#">Our Story</a>
-                <a id="rsvp" href="#">Join Us!</a>-->
-        </header>
-        <div class="intro">
-        <h1>342</h1>
-        <h2>DAYS</h2>
-        <h3>until we</h3>
-        <h3 id="married-action">take the plunge</h3>
-        <!--<h2 id="married-action">tie the knot</h2>
-        <h2 id="married-action">jump the broom</h2>
-        <h2 id="married-action">say "I do"</h2>-->
-        </div>
+    <!-- Add your site or application content here -->
 
-    <div class="wedding">
-        <div class="when">
-            <h1 class="heading"><span class="highlight">Mark your calendar<span class="highlight"></h1>
-                <div class="when-details">
-                    <!--<hr id="line-left"/><p>for</p><hr id= "line-right"/>-->
-                    <p>The ceremony is</p>
-                    <h4>Saturday</h4>
-                    <h3 id="date">May 23, 2015</h3>
-                    <h4>at 6:30pm</h4>
-                    <p>with party to follow</p>
-                </div>
+    <div class="container">
 
-        <div class="where">
-            <h1 class="heading"><span class="highlight">Pack your bags</span></h1>
-                <div class="where-details">
-                    <h4>We're going to</h4>
-                    <h3 id="location">Cancun</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                </div>
-
-                    <p class="map">
-                        <a href="https://www.google.com/maps/preview" target="_blank"><img src="map-small.png"></a>
-                    </p>
-        </div>
-
-
-        <div class="what">
-            <h1 class="heading">And get ready to party!</h1>
-                <div class="what-details">
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                </div>
-        </div>
-    </div>
-
-    <div class="quform-outer">
-                <form class="quform" action="quform/process.php" method="post" enctype="multipart/form-data" onclick="">
-                    <div class="quform-inner">
-                        <div class="quform-elements">
-                            <div class="quform-group-wrap quform-group-style-plain quform-group-alignment-left">
-                                <div class="quform-group-elements">
-                                    <div class="quform-group-row quform-group-row-2cols">
-                                        <!-- Name Input -->
-                                        <div class="quform-element quform-element-text">
-                                            <div class="quform-spacer name-spacer">
-                                                <label for="name">Your Name <span class="quform-required">*</span></label>
-                                                <div class="quform-input">
-                                                    <input id="name" type="text" name="name" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- /Name Input -->
-                                        <!-- Email Input -->
-                                        <div class="quform-element quform-element-text">
-                                            <div class="quform-spacer">
-                                                <label for="email">Your Email <span class="quform-required">*</span></label>
-                                                <div class="quform-input">
-                                                    <input id="email" type="email" name="email" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- /Email Input -->
-                                    </div>
-                                </div>
-                            </div>
-
-                             <!-- RSVP Radio -->
-                            <div class="quform-element quform-element-radio rsvp-form">
-                                <div class="quform-spacer">
-                                    <label class="rsvp-label">Attending the wedding? <span class="quform-required">*</span></label>
-                                    <div class="quform-input">
-                                        <div class="quform-options">
-                                            <div class="quform-option">
-                                                <input class="radio-spacer" name="rsvp" value="Yes" type="radio" /> 
-                                                <label class="rsvp-radio">Yes, I'm coming!</label>
-                                            </div>
-                                            <div class="quform-option">
-                                                <input class="radio-spacer" name="rsvp" value="No" type="radio" /> 
-                                                <label class="rsvp-radio">No, have fun without me!</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- /RSVP Radio -->
-
-                            <!-- Message Textarea -->
-                            <div class="quform-element quform-element-textarea">
-                                <div class="quform-spacer">
-                                    <label for="message">Add a message (or a song request)</label>
-                                    <div class="quform-input">
-                                        <textarea id="message" name="message" style="height: 130px;"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- /Message Textarea -->
-
-                            <!-- Submit button -->
-                            <div class="quform-submit">
-                                <div class="quform-submit-inner">
-                                    <button type="submit" value="Send"><span><em>RSVP</em></span></button>
-                                </div>
-                                <div class="quform-loading-wrap"><span class="quform-loading"></span></div>
-                            </div>
-                            <!-- /Submit button -->
-                       </div>
-                   </div>
-                </form>
+        <!--Countdown-->
+            <div class="intro">
+                        <h1 id="countdown"></h1>
+                        <h2>DAYS</h2>
+                        <h3 class="until-we">until<span id="elipses">...</span></h3>
             </div>
 
-        <footer>
+    <!--WEDDING INFORMATION-->
+
+        <div class="wedding-container">
+
+        <!--Take the Plunge Slider-->
+            <div class="plunge">
+                <h1 id="couples">Christina <span id="amp">&</span> Victor 
+                <h1 class="plunge-text">Take the Plunge</h1>
+            </div>
+
+        <!--Our Story-->
+            <div class="story">
+                <h1 class="heading">After a chance encounter in Austin,</h1>
+                <h3 class="heading-sub">Christina & Victor were hooked!</h3>
+
+            <!--Christina's Quote-->
+                <div class="quote-bubbles">
+                    <div class="christina-quote">
+                        <div class="quote">
+                            <p>"I will never forget the evening I met Victor. He was intently listening to my conversation with friends, but never said a word. I was surprised when he asked me out on a date. I knew there was something about Victor that was going to change my life. I took a chance and gave him my number."</p>
+                        </div>
+                        <img src="img/chris.png" id="chris"/>
+                    </div>
+             
+            <!--Victor's Quote-->
+                <div class="victor-quote">
+                    <div class="quote">
+                        <p>"I found myself staring at her eyes as she patiently talked to my friend. Fastforward a couple of drinks and there I was asking for her number. I took her out a few days later, and what I expected to be a short lunch turned into hours of conversing. I knew then that she was the one."</p>
+                    </div>
+                    <img src="img/victor.png" id="victor"/>
+                </div>
+            </div>
+
+        <!--Hacky code I need to fix-->
+            <h1 class="heading"></h1>
+        </div>
+
+    <!--Wedding in Mexico Announcement-->
+        <div class="mexico">
+            <h1 class="heading">Now, they're making it official in <span id="mexico">Mexico!</span></h1>
+        </div>
+
+    <!--Wedding Date-->    
+        <div class="when">
+            <div class="when-info">
+                <h1 class="heading">Mark your calendar</h1>
+                    <div class="when-details">
+                        <p>The ceremony is</p>
+                        <h3 id="date">Saturday, May 23</h3>
+                        <h4 id="time">at 6:30pm</h4>
+                        <p>with party to follow</p>
+                    </div>
+            </div>
+        </div>
+
+    <!--Wedding Location-->
+        <div class="where">
+            <div class="where-info">
+                <h1 class="heading">Pack your bags</h1>
+                <div class="where-details">
+                    <p>We're going to</p>
+                    <h3 id="location">Cancun</h3>
+
+                    <div class="hotel-info">
+                        <p>The wedding will be at the <a href="http://www.marriott.com/hotels/travel/cunjw-jw-marriott-cancun-resort-and-spa/" id="hotel-link" target="_blank">JW Marriott Cancun Resort and Spa.</a> More details about booking coming soon!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--What to Bring-->
+            <!--<div class="bring">
+                <h3 id="location">Be sure to bring</h3>
+
+                 <form class="ac-custom ac-checkbox ac-checkmark" autocomplete="off">
+                    <ul>
+                            <li><input id="cb6" name="cb6" type="checkbox"><label for="cb6">Your passport</label></li>
+                            <li><input id="cb7" name="cb7" type="checkbox"><label for="cb7">Swimsuit and sunscreen</label></li>
+                            <li><input id="cb8" name="cb8" type="checkbox"><label for="cb8">Dancing shoes, party pants, etc.</label></li>
+                    </ul>
+                </form>
+            </div>-->
+
+                    <!--<p class="map">
+                        <a href="https://www.google.com/maps/place/JW+Marriott+Cancun+Resort+and+Spa/@21.0888372,-86.7705311,17z/data=!4m2!3m1!1s0x8f4c2847ebdca3db:0xdf62995cc94cc628" target="_blank"><img src="cancun-map.png"></a>
+                    </p>-->
+
+        <!--What to Expect / RSVP-->
+        <div class="what">
+            <div class="what-info">
+                <h1 class="heading">Get ready to <br/><span id="party">party!</span></h1>
+                <div class="what-details">
+                    <p>We can't wait to celebrate with all our favorite people.</p>
+                    <!--<img src="img/couplepic.jpg" />-->
+                </div>
+
+                <div class="rsvp-button">
+                    <a href="mailto:christinaaltmaier@aol.com?subject=RSVP for our wedding!" id="button-link">
+                        <button>RSVP</button>
+                    </a>
+                </div>
 
 
-        </footer>
+            </div>
+        </div>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    </div>
+</div>
+
+        <!--<div class="rsvp">
+            <h1 class="heading">Will we see you in Mexico?</h1>
+            
+        </div>-->
+
+
+
+
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
@@ -166,13 +176,7 @@
         <!-- jQuery -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 
-        <!-- Foundation JS -->
-        <script src="/js/foundation.min.js"></script>
-        <script>
-            $(document).foundation();
-        </script>
-
-        <script src="../js/script.js"></script>
+        
         <!-- Slides.js -->
         <!-- TODO link to the slides.min.js file -->
         <!--<script src="js/jquery.slides.min.js"></script>-->

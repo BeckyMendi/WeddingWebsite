@@ -100,61 +100,52 @@ textarea {
 body {
     margin: 0 auto;
 }
-/*header {
-    background-color: white;
-    width: 100%;
-    margin: 0 auto;
-    z-index: 10000;
-    /*position: relative;
-    top: 0;
-}*/
 
 .intro {
+    margin: 0 auto;
     padding-top: 4em;
     text-align: center;
     color: white;
     line-height: .2;
     margin: 0 auto;
-    height: 800px;
+    height: 500px;
     width: 100%;
     background-image:url("../img/sunset2.png");
-    z-index: 0;
+    z-index: 99;
     position: fixed;
     top: 0;
+    overflow: hidden;
 }
 
+h1, h2 {
+    font-family: 'Oswald';
+}
+
+/* ==========================================================================
+   Countdown
+   ========================================================================== */
+
 #countdown {
-    padding: 0;
     font-size: 8em;
-    font-family: Oswald;
 }
 
 h2 {
-    font-size: 5em;
-    /*margin-left: -4%;*/
-    padding: 0;
-    font-family: Oswald;
-}
-
-h3 {
-    font-size: 6em;
-    font-weight: normal;
+    font-size: 5.2em;
 }
 
 .until-we {
-    font-size: 3.3em;
+    font-size: 3em;
     font-family: 'Satisfy';
+}
+
+#elipses {
+    font-family: 'Lato';
+    font-size: .9em;
 }
 
 h4 {
     font-size: 2em;
     line-height: .1
-}
-
-#married-action {
-    font-family: "Pacifico";
-    font-weight: normal;
-    line-height: .25;
 }
 
 
@@ -163,39 +154,13 @@ h4 {
    ========================================================================== */
 
 
-.wedding {
+.wedding-container {
     width: 100%;
-    z-index: 1000;
+    z-index: 101;
     position: relative;
-    margin-top: 600px;
+    margin-top: 500px;
     color: #f8f3ef;
 }
-
-.heading {
-    text-align: center;
-    font-size: 3.5em;
-    font-family: "Oswald";
-    font-weight: normal;
-    line-height: 1.4;
-    color: #f8f3ef;
-    padding-left: .5em;
-    padding-right: .5em;
-}
-
-
-.when-details, .where-details, .what-details {
-    text-align: center;
-    line-height: .2;
-    padding-bottom: 3em;
-    font-family: futura;
-    padding-left: 1em;
-    padding-right: 1em;
-}
-
-.when, .where, .what {
-    padding-top: 1.5em;
-}
-
 
 .plunge {
     background: url("../img/plunge.png") no-repeat center center; 
@@ -205,48 +170,196 @@ h4 {
       background-size: cover;
     height: 900px;
     width: 100%;
+    text-align: center;
+}
+
+#couples {
+    font-family: 'Lato';
+    font-weight: normal;
+    font-size: 1.7em;
+    padding-top: 200px;
+    color: #99ffff;
+}
+
+#amp {
+    font-family:'Petit Formal Script'
 }
 
 .plunge-text {
-    font-family: 'Pacifico';
-    font-size: 5em;
-    text-align: center;
-    padding-top: 100px;
+    font-family: 'Satisfy';
+    font-size: 4em;
+    line-height: 1;
     font-weight: normal;
+    padding-left: 2%;
+    padding-right: 2%;
 
 }
+
+.heading {
+    text-align: center;
+    font-size: 3.5em;
+    font-family: "Oswald";
+    font-weight: normal;
+    line-height: 1.4;
+    color: #f8f3ef;
+}
+
+
+.when-details, .where-details, .what-details {
+    text-align: center;
+    line-height: .2;
+    /*padding-bottom: 3em;*/
+    font-family: 'Lato';
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.story, .when, .where, .what, .rsvp-form {
+    padding-top: 3em;
+    padding-bottom: 3em;
+    /*padding-bottom: 1.5em;*/
+
+}
+
+
+/* ==========================================================================
+    Mark Your Calendar // When
+   ========================================================================== */
+
+.story {
+    background-color: #f8f3ef;
+    position: cover;
+    text-align:center;
+}
+
+.story:after {
+    clear: both;
+    content: "";
+    height: 0;
+    visibility: none;
+    display: block;
+}
+
+.story .heading {
+    color: #2B3A48;
+    line-height: 1.2;
+}
+
+.heading-sub {
+    font-family: 'Satisfy';
+    color: red;
+    font-size: 3em;
+    line-height: 1;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 5%;
+}
+
+.quote-bubbles {
+    padding-bottom: 6em;
+}
+
+ .christina-quote {
+    float: left;
+    }
+
+.quote {
+        margin-left: 5%;
+        margin-right: 5%;
+        font-style: italic;
+        display: block;
+        text-align: left;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        position: relative;
+        border-radius: 10px;
+        background-color: #9dcdce;
+    }
+
+.quote:after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        width: 0;
+        height: 0;
+        left: 40%;
+        border-left   : 30px solid transparent;
+        border-right  : 30px solid transparent;
+        border-top : 30px solid #9dcdce;
+    }
+
+    #chris, #victor {
+        padding: 3em;
+        padding-bottom: 5em;
+    }
+
+    .victor-quote {
+        float: left;
+
+    }
+
+
+/* ==========================================================================
+    Let's go to Mexico
+   ========================================================================== */
+
+   .mexico {
+        background-color: orange;
+        position: cover;
+        text-align:center;
+        padding-bottom: 2em;
+        padding-top: 2em; 
+   }
+
+   .mexico h1 {
+    padding-left: .5em;
+    padding-right: .5em;
+   }
+
+   #mexico {
+    font-family: 'Satisfy';
+    font-size: 1.5em;
+    padding-left: inherit;
+   }
+
+
 /* ==========================================================================
     Mark Your Calendar // When
    ========================================================================== */
 
 
 .when {
-color:white;
-background-color:#2B3A48;
-text-align:center;
+    background-color:#2B3A48;
+    text-align:center;
 }
 
-/*.when:after {
-    content: " ";
-    display:block;
-    position: relative;
-    top:0px;left:0px;
-    width:100%;
-    height:36px;
-    background: linear-gradient(#2B3A48 0%, transparent 0%), linear-gradient(135deg, #272220 33.33%, transparent 33.33%) 0 0%, #272220 linear-gradient(45deg, #272220 33.33%, #2B3A48 33.33%) 0 0%;
-    background: -webkit-linear-gradient(#2B3A48 0%, transparent 0%), -webkit-linear-gradient(135deg, #272220 33.33%, transparent 33.33%) 0 0%, #272220 -webkit-linear-gradient(45deg, #272220 33.33%, #2B3A48 33.33%) 0 0%;
-    background: -o-linear-gradient(#2B3A48 0%, transparent 0%), -o-linear-gradient(135deg, #272220 33.33%, transparent 33.33%) 0 0%, #272220 -o-linear-gradient(45deg, #272220 33.33%, #2B3A48 33.33%) 0 0%;
-    background: -moz-linear-gradient(#2B3A48 0%, transparent 0%), -moz-linear-gradient(135deg, #272220 33.33%, transparent 33.33%) 0 0%, #272220 -moz-linear-gradient(45deg, #272220 33.33%, #2B3A48 33.33%) 0 0%;
-    background-repeat: repeat-x;
-    background-size: 0px 100%, 9px 27px, 9px 27px;
-}*/
+.when-info {
+    border: 1px dotted white;
+    padding: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.when-details {
+    padding-top: 2em;
+    padding-bottom: 7em;
+}
 
 #date {
+    font-family: 'Satisfy';
     font-size: 2.7em;
+    line-height: 1.3;
+    color: orange;
+}
+
+#time {
+    font-size: 1.7em;
 }
 
 .when-details p {
-    font-size: 1em;
+    font-size: 1.5em;
 }
 
 /* ==========================================================================
@@ -255,19 +368,54 @@ text-align:center;
 
 .where {
     background: url("../img/blurred-ocean.jpg") no-repeat;
-    padding-bottom: 2em;
+    position: cover;
+}
+
+.where-info {
+    border: 1px dotted white;
+    padding: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.where-details {
+    padding-top: 2em;
+    padding-bottom: 7em;
 }
 
 .where-details p {
-    line-height: 1.5;
+    line-height: 1.3;
     font-size: 1.4em;
-    color: white;
 }
 
 #location {
-    color: white;
-    font-size: 2.7em;
+    font-family: 'Satisfy';
+    color: orange;
+    font-size: 4em;
 }
+
+a #hotel-link { 
+    color: orange;
+    text-decoration: none;
+ }
+
+#hotel-link a:hover  { 
+    color: orange;
+}
+
+a:visited {
+    color: white;
+}
+
+.hotel-info {
+    padding-top: 2em;
+    padding-left: 20%; 
+    padding-right: 20%;
+}
+
+/*.hotel-info p {
+    font-size: 1em;
+}*/
 
 .map {
     text-align: center;   
@@ -278,20 +426,62 @@ text-align:center;
    Get Ready To Party // What
    ========================================================================== */
 
+.what {
+    
+    background-color: #016bc1;
+    position: cover;
+    /*background: url("partypic.png") no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;*/
+    width: 100%;
+}
+
+.what-info {
+    border: 1px dotted white;
+    padding: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
 .what-details p {
     line-height: 1.5;
     font-size: 1.4em;
     color: white;
 }
 
-/*footer {
-    height: 100px;
-    position: fixed;
-    width: 100%;
-    background-color: orange;
-    z-index: 1000;
+#party {
+    font-family: 'Satisfy';
+    font-size: 1.5em;
+}
 
-}*/
+.rsvp-button {
+    text-align: center;
+    padding-top: 2em;
+}
+
+#button-link a, button {
+        width:200px;
+        height:45px;
+        color: white;
+        background:red;
+        border:none;
+        border-bottom:3px solid #c20027;
+        letter-spacing:2px;
+        margin-right: 20px;
+    }
+
+    #button-link a:hover, button:hover {
+        background: #dc032e;
+    }
+
+
+/*****************************************************************************/
+/*
+/* Party Pic Background
+/*
+/*****************************************************************************/
 
 /*****************************************************************************/
 /*
@@ -299,72 +489,46 @@ text-align:center;
 /*
 /*****************************************************************************/
 
-.quform-outer {
-    padding-left: 10%;
+
+.rsvp-form {
+    color:black;
     background-color: white;
-    font-family: Futura;
-    color: gray;
+    position: cover;
+    font-family: futura;
+    font-size: 1.5em;
 }
 
+form {
+    padding-left: 15%;
+    text-align: left;
 
-
-/*****************************************************************************/
-/*
-/* Nav Bar
-/*
-/*****************************************************************************/
-
-.nav {
-    padding: 0;
 }
 
-.nav:after {
-    clear: both;
-    content: '';
-    visibility: hidden;
-    display: block;
-    height: 0;
-}
-
-#logo {
-    font-family: 'Damion';
-    font-size: 4em;
-    float: left;
-    padding: 7px;
-}
-
-#wedding {
-    font-size: 1.7em;
-    float: right;
-    margin-right: 30px;
-    padding: 7px;
-    padding-top: 30px;
-    margin-left: 30px;
-}
-
-#wedding:after {
-    clear: both;
-    content: '';
-    visibility: hidden;
-    display: block;
-    height: 0;
-}
-
-#rsvp {
-    font-size: 1.7em;
-    float: right;
-    padding: 7px;
-    padding-top: 30px;
-}
-
-a  { 
-    color: #414141;
-    text-decoration: none;
+ label {
  }
 
-a:hover  { 
-    color: white;
+.input-field {
+      padding-left: 15px;
 }
+.name-input, .email-input {
+    width: 200px;
+    height: 30px;
+}
+
+.form-name, .form-email, .form-message {
+
+}
+
+
+
+
+
+/*****************************************************************************/
+/*
+/* Links
+/*
+/*****************************************************************************/
+
 
 
 
@@ -480,15 +644,115 @@ a:hover  {
    Modify as content requires.
    ========================================================================== */
 
-@media (min-width: 300px) { body {background: red;} }
-@media (min-width: 700px) { body {background: blue;} }
-@media (min-width: 1100px) { body {background: white;} }
+@media (min-width: 300px) { }
+@media (min-width: 700px) { 
+
+     .christina-quote {
+        float: left;
+    }
+
+    .quote {
+            margin-left: 5%;
+            margin-right: 5%;
+
+            font-style: italic;
+            display: block;
+            text-align: left;
+            padding-left: 3%;
+            padding-right: 3%;
+            padding-top: 1%;
+            padding-bottom: 1%;
+            position: relative;
+            border-radius: 10px;
+            background-color: #9dcdce;
+        }
+
+    .quote:after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            width: 0;
+            height: 0;
+            left: 45%;
+            border-left   : 30px solid transparent;
+            border-right  : 30px solid transparent;
+            border-top : 30px solid #9dcdce;
+        }
+
+        #chris {
+            margin-left: 0%;
+            padding: 3em;
+        }
+
+        .victor-quote {
+            float: left;
+
+        }
+
+        #victor {
+            margin-left: 0%;
+            padding: 3em;
+
+        }
+}
+
+@media (min-width: 1100px) {
+
+    .quote-bubbles {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .christina-quote {
+        max-width: 50%;
+    }
+
+    .quote {
+        font-style: italic;
+        display: block;
+        text-align: left;
+        padding-left: 5%;
+        padding-right: 5%;
+        position: relative;
+        border-radius: 10px;
+        background-color: #9dcdce;
+    }
+
+    .quote:after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        width: 0;
+        height: 0;
+        left: 45%;
+        border-left   : 30px solid transparent;
+        border-right  : 30px solid transparent;
+        border-top : 30px solid #9dcdce;
+    }
+
+    #chris {
+        padding: 3em;
+        margin-left: 0%;
+    }
+
+    .victor-quote {
+        float: right;
+        max-width: 50%;
+
+    }
+
+    #victor {
+        padding: 3em;
+        margin-left: 0%;
+
+    }
+
+}
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
 }
 
-@media print,
+@media print {
        (-o-min-device-pixel-ratio: 5/4),
        (-webkit-min-device-pixel-ratio: 1.25),
        (min-resolution: 120dpi) {

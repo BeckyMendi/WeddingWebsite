@@ -1,0 +1,41 @@
+
+            <!--RSVP Form-->
+        <div class="rsvp-form">
+
+        <h1 class="heading">Will we see you in Mexico?</h1>
+  
+        <form action="http://getsimpleform.com/messages?form_api_token=d4606dbb7febddccd940dcab4ac533aa" method="post">
+                  
+            <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+            <input type='hidden' name='redirect_to' value='<the complete return url e.g. http://fooey.com/thank-you.html>' />
+                  
+            <!-- Input Fields.... -->
+            <div class="">
+                <div class="form-name">
+                    <label class="name">Name:</label> <span class="input-field"><input type='text' name='name' class="name-input"/></span>
+                </div><br/>
+
+                <div class="form-email">
+                  <label class="email">Email:</label><span class="input-field"><input type='text' name='email' class="email-input"/></span>
+                </div><br/>
+            </div>
+
+
+                  <!-- RSVP Radio -->
+                            <div class="rsvp-radio">
+                                                                             <input class="radio-spacer" name="rsvp" value="Yes" type="radio" /> 
+                                                <label class="rsvp-radio-yes">Yes! I'll start practicing my dance moves.</label><br/>
+                                                <input class="radio-spacer" name="rsvp" value="No" type="radio" /> 
+                                                <label class="rsvp-radio-no">No, but have a blast!</label>
+                            </div>
+
+                        
+                <!--Message Input-->
+                <div class="form-message">
+                  <label>Send us some love or song requests</label><br/>
+                  <input type='text' name='test' /> <br/>
+                </div>
+                  <input type='submit' value='Submit' />
+                </form>
+
+        </div>

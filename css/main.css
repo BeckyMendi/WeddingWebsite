@@ -469,7 +469,6 @@ a:visited {
         border:none;
         border-bottom:3px solid #c20027;
         letter-spacing:2px;
-        margin-right: 20px;
     }
 
     #button-link a:hover, button:hover {
@@ -644,8 +643,20 @@ form {
    Modify as content requires.
    ========================================================================== */
 
-@media (min-width: 300px) { }
+@media (min-width: 300px) { 
+    .hotel-info {
+    padding-top: 2em;
+    padding-left: 2%; 
+    padding-right: 2%;
+}
+}
 @media (min-width: 700px) { 
+
+    .hotel-info {
+    padding-top: 2em;
+    padding-left: 20%; 
+    padding-right: 20%;
+}
 
      .christina-quote {
         float: left;
@@ -697,6 +708,12 @@ form {
 }
 
 @media (min-width: 1100px) {
+
+    .hotel-info {
+    padding-top: 2em;
+    padding-left: 20%; 
+    padding-right: 20%;
+}
 
     .quote-bubbles {
         margin-left: 5%;
